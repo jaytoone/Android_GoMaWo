@@ -6,7 +6,7 @@
 
 ## App Flow
 
-![](C:\Users\Lenovo\AndroidStudioProjects\GoMaWo_admob\app_flow_for_report.png)
+![app_flow_for_report](https://user-images.githubusercontent.com/50652715/106708494-51b4c280-6636-11eb-85e4-191177ea8366.png)
 
 
 
