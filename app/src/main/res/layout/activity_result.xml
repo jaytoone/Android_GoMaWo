@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ResultView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logoo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:stretchColumns="0, 1">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+
+            <Button
+                android:id="@+id/btn_recam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="다시찍기"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@android:color/holo_red_light"
+                android:textStyle="bold"
+                android:background="@drawable/bg_custom_button"
+                />
+
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="종료"
+                android:textSize="15sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:background="@drawable/bg_custom_button_filled"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:id="@+id/ad_view_container">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="LARGE_BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+    </FrameLayout>
+
+</LinearLayout>
